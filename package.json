@@ -1,10 +1,14 @@
 {
-  "name": "firewall-rule-parser",
-  "version": "0.0.1",
-  "main": "index.ts",
+  "name": "@apollo21/firewall-rule-parser",
+  "version": "0.0.2",
+  "main": "dist/index.js",
   "author": "Wasutan Kitijerapat",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "generate": "antlr4ts FirewallRule.g4",
+    "build": "tsc --build"
+  },
   "dependencies": {
     "antlr4-c3": "^1.1.16",
     "antlr4ts": "^0.5.0-alpha.4",
@@ -12,6 +16,7 @@
   },
   "devDependencies": {
     "@types/node": "^15.0.3",
-    "antlr4ts-cli": "^0.5.0-alpha.4"
+    "antlr4ts-cli": "^0.5.0-alpha.4",
+    "node-ts": "^5.1.1"
   }
 }
