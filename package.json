@@ -1,12 +1,12 @@
 {
   "name": "@apollo21/firewall-rule-parser",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "main": "dist/index.js",
   "author": "Wasutan Kitijerapat",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "generate": "antlr4ts FirewallRule.g4",
+    "generate": "antlr4ts src/FirewallRule.g4",
     "build": "tsc --build"
   },
   "dependencies": {
