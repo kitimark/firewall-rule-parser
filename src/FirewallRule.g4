@@ -41,7 +41,7 @@ values: array | value;
 
 array: LBRANCE value* RBRANCE;
 
-value: STR | NUM;
+value: STR | NUM | IP;
 
 LBRANCE: '{';
 RBRANCE: '}';
@@ -68,6 +68,8 @@ IN: 'in';
 
 STR: '"' CHAR* '"';
 NUM: [1-9][0-9]*;
+
+IP: NUM '.' NUM '.' NUM '.' NUM;
 
 fragment CHAR: ~["\\\r\n];
 
